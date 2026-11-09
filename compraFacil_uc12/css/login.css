@@ -1,0 +1,171 @@
+
+
+/* Tela do login */
+
+.login-container {
+
+    width: 100%; /* largura */
+    min-height: 100vh;
+    padding: 35px 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* LOGO */
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.logo img {
+    width: 220px;
+    max-width: 75%;
+}
+
+/* TÍTULO */
+
+.login-titulo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.login-titulo h1 {
+    color: var(--azul);
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.login-titulo p {
+    color: #777777;
+    font-size: 14px;
+}
+
+/* FORMULÁRIO */
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.campo label {
+    color: var(--azul);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+    height: 45px;
+    padding: 0 15px;
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+
+    background-color: var(--cinza);
+    font-size: 14px;
+}
+
+.campo input:focus {
+    border-color: var(--verde);
+}
+
+/* BOTÃO ENTRAR */
+
+.botao-entrar {
+    width: 100%;
+    height: 45px;
+
+    background-color: var(--azul);
+    color: var(--branco);
+
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao-entrar:hover {
+    background-color: var(--verde);
+}
+
+/* CADASTRO */
+
+.cadastro-link {
+    margin-top: 22px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.cadastro-link p {
+    color: #777777;
+    margin-bottom: 5px;
+}
+
+.cadastro-link a {
+    color: var(--verde);
+    font-weight: bold;
+}
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+    .login-container {
+        max-width: 450px;
+        margin: 0 auto;
+        padding: 40px;
+    }
+
+    .logo img {
+        width: 240px;
+    }
+
+    .login-titulo h1 {
+        font-size: 32px;
+    }
+    
+/* CAMPO DE SENHA */
+
+.senha-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.senha-container input {
+    width: 100%;
+    padding-right: 45px;
+}
+
+.senha-container button {
+    position: absolute;
+    right: 15px;
+
+    background: transparent;
+    color: #777777;
+
+    font-size: 16px;
+}
+
+.senha-container button:hover {
+    color: var(--azul);
+}
+
+}

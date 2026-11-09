@@ -1,0 +1,70 @@
+
+/* Pagina principal*/
+
+/* Cores e configurações principais */
+:root {
+    --azul: #1D2A55;
+    --verde: #55C957;
+    --verde-claro: #A6F28D;
+    --amarelo: #FFD92F;
+    --branco: #FFFFFF;
+    --cinza: #F2F3F5;
+    --texto: #333333;
+
+    --fonte: Arial, sans-serif;
+}
+
+/* Reset geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações do documento */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fonte);
+    background-color: var(--branco);
+    color: var(--texto);
+    min-height: 100vh;
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Botões */
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Campos de formulário */
+input {
+    font-family: inherit;
+    outline: none;
+}
+
+
+/* CONTAINER PRINCIPAL */
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    background-color: var(--branco);
+}

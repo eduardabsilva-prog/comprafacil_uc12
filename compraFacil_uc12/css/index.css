@@ -1,0 +1,37 @@
+
+/* TELA INICIAL */
+
+
+/* TELA INICIAL */
+
+.tela-inicial {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--azul);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tela-inicial img {
+    width: 200px;
+    max-width: 80%;
+}
+
+/* TABLETS E DESKTOPS */
+
+@media (min-width: 768px) {
+    .tela-inicial img {
+        width: 260px;
+    }
+}
+
+/* TELAS GRANDES */
+
+@media (min-width: 1200px) {
+    .tela-inicial img {
+        width: 300px;
+    }
+}
+
